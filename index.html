@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -30,7 +37,7 @@
           <a href="./index.html" class="link logo header-logo"
             >Web<span class="header-logo-accent">Studio</span></a
           >
-          <!-- </div> -->
+
           <!--Menu-navigation-->
           <ul class="list nav-list">
             <li class="nav-list-item">
@@ -55,6 +62,76 @@
             </li>
           </ul>
         </address>
+
+        <!-- mobile-menu -->
+
+        <button
+          class="js-open-menu mobile-open-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open" width="32" height="22">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="mobile-menu-close" width="8" height="8">
+              <use href="./images/icons.svg#menu-close-icon"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li><a href="" class="link mobile-menu-link menu-link-accent">Studio</a></li>
+            <li><a href="" class="link mobile-menu-link">Portfolio</a></li>
+            <li><a href="" class="link mobile-menu-link">Contacts</a></li>
+          </ul>
+
+          <address>
+            <ul class="list mobile-address-list">
+              <li>
+                <a class="link mobile-menu-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a class="link mobile-menu-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="list menu-social-list">
+            <li>
+              <a class="menu-social-link" href=""
+                ><svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="menu-social-link" href="">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="menu-social-link" href=""
+                ><svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="menu-social-link" href=""
+                ><svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -74,9 +151,11 @@
       </section>
 
       <!--section-2-business actions-->
+
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">business actions</h2>
+
           <ul class="list actions-list">
             <li class="actions-list-item">
               <div class="actions-icon-box">
@@ -91,6 +170,7 @@
                 creative solution.
               </p>
             </li>
+
             <li class="actions-list-item">
               <div class="actions-icon-box">
                 <svg class="icon-actions" width="64" height="64">
@@ -104,6 +184,7 @@
                 possible time.
               </p>
             </li>
+
             <li class="actions-list-item">
               <div class="actions-icon-box">
                 <svg class="icon-actions" width="64" height="64">
@@ -117,6 +198,7 @@
                 and minimize risk.
               </p>
             </li>
+
             <li class="actions-list-item">
               <div class="actions-icon-box">
                 <svg class="icon-actions" width="64" height="64">
@@ -186,7 +268,7 @@
                 alt="Photo"
               />
               <div class="card-content">
-                <h3 class="title card-title">Mark Guerrero</h3>
+                <h3 class="card-title">Mark Guerrero</h3>
                 <p class="paragraph-text card-text">Product Designer</p>
                 <ul class="list team-social-list">
                   <li class="team-social-item">
@@ -229,7 +311,7 @@
                 alt="Photo"
               />
               <div class="card-content">
-                <h3 class="title card-title">Tom Ford</h3>
+                <h3 class="card-title">Tom Ford</h3>
                 <p class="paragraph-text card-text">Frontend Developer</p>
                 <ul class="list team-social-list">
                   <li class="team-social-item">
@@ -273,7 +355,7 @@
                 alt="Photo"
               />
               <div class="card-content">
-                <h3 class="title card-title">Camila Garcia</h3>
+                <h3 class="card-title">Camila Garcia</h3>
                 <p class="paragraph-text card-text">Marketing</p>
                 <ul class="list team-social-list">
                   <li class="team-social-item">
@@ -317,7 +399,7 @@
                 alt="Photo"
               />
               <div class="card-content">
-                <h3 class="title card-title">Daniel Wilson</h3>
+                <h3 class="card-title">Daniel Wilson</h3>
                 <p class="paragraph-text card-text">UI Designer</p>
                 <ul class="list team-social-list">
                   <li class="team-social-item">
@@ -544,6 +626,15 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
