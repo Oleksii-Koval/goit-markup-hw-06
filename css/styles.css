@@ -88,6 +88,8 @@ img {
 @media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -204,12 +206,7 @@ img {
     margin: 0;
   }
 }
-/* .address-list {
-  display: flex;
-  gap: 40px;
-  padding: 24px 0;
-  margin: 0;
-} */
+
 @media only screen and (min-width: 1158px) {
   .address-list {
     display: flex;
@@ -631,13 +628,6 @@ img {
   |============================
 */
 
-@media only screen and (min-width: 768px) {
-  .action-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-}
 @media only screen and (min-width: 1158px) {
   .actions-list {
     display: flex;
@@ -645,11 +635,26 @@ img {
     gap: 24px;
   }
 }
-
-.actions-list-item:not(:last-child) {
-  margin-bottom: 72px;
+@media only screen and (min-width: 1158px) {
+  .action-list-item {
+    width: 264px;
+  }
 }
 
+@media only screen and (max-width: 768px) {
+  .actions-list-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .actions-list-item {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 1 * 24px) / 2);
+  }
+}
 @media only screen and (min-width: 1158px) {
   .actions-list-item {
     margin-bottom: 0;
@@ -711,13 +716,15 @@ img {
 
 .paragraph-text {
   font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--sample-text);
 }
+
 @media only screen and (min-width: 1158px) {
   .paragraph-text {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--sample-text);
+    font-weight: 400;
   }
 }
 
